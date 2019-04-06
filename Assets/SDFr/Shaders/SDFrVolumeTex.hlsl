@@ -27,7 +27,7 @@ inline float2 LineAABBIntersect(float3 ro, float3 re, float3 aabbMin, float3 aab
 }
 
 //incoming ray is world space
-inline float DistanceFunctionTex3D( in float3 rayPosWS, in float currentDist, in float3 rayOrigin, in float3 rayEnd, in SDFrVolumeData data, in Texture3D tex )
+inline float DistanceFunctionTex3D( in float3 rayPosWS, in float3 rayOrigin, in float3 rayEnd, in SDFrVolumeData data, in Texture3D tex )
 {
     float4x4 w2l = data.WorldToLocal;
     float3 extents = data.Extents;

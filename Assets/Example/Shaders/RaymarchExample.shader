@@ -50,10 +50,10 @@ Shader "Custom/RaymarchExample"
                 
                 float d = min(box,sphere);
                           
-                float ad = DistanceFunctionTex3D( rayPos, 0, rayOrigin, rayEnd, _VolumeBuffer[0], _VolumeATex );
+                float ad = DistanceFunctionTex3D( rayPos, rayOrigin, rayEnd, _VolumeBuffer[0], _VolumeATex );
                 d = min(ad,d);
                 
-                float bd = DistanceFunctionTex3D( rayPos, 0, rayOrigin, rayEnd, _VolumeBuffer[1], _VolumeBTex );
+                float bd = DistanceFunctionTex3D( rayPos, rayOrigin, rayEnd, _VolumeBuffer[1], _VolumeBTex );
                 d = min(bd,d);
                 
                 return d;
