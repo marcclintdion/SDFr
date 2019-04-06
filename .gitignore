@@ -9,3 +9,6 @@ Desktop.ini
 /Logs
 /obj
 /Temp
+*.sln
+*.csproj
+*.user
