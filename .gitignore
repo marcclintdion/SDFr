@@ -1,0 +1,11 @@
+# Windows
+Thumbs.db
+Desktop.ini
+# Unity
+/.idea
+/Assets/Exclude
+/Assets/Exclude.meta
+/Library
+/Logs
+/obj
+/Temp
